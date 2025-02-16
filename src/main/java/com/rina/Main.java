@@ -21,7 +21,7 @@ public class Main extends ListenerAdapter {
     );
 
     public static void main(String[] args) {
-        JDA bot = JDABuilder.create("MTI5NDUxNzY0NDgzNzI2MTM5Ng.GouMwI.ftv5TWxECwfUZd6mWWq6UL17BobwINIbwbxc_4",
+        JDA bot = JDABuilder.create("YOUR_BOT_TOKEN",
                 EnumSet.allOf(GatewayIntent.class)).enableCache(CacheFlag.VOICE_STATE).build();
         System.out.println("Instance online in " + bot.getSelfUser().getName());
 
